@@ -9,6 +9,7 @@ function compute() {
   var years = document.getElementById("years").value;
   var interst = amount * rate * years /100;
   var year = new Date().getFullYear()+parseInt(years);
+  document.getElementbyID("result").innerHTML ="If you Deposit "+Amount+", \<br>\ at an interest rate of "+rate+"%. \<br> You will receive an amount of "+interest+", \<br>\ in the year "+year+". \<br>"
   }
   
   function UpdateRate() {
@@ -16,6 +17,6 @@ function compute() {
     document.getElementbyID("ratevalue").innerHTML = ratevalue;
   }
   
- document.getElementbyID("result").innerHTML ="If you Deposit "+Amount+", \<br>\ at an interest rate of "+rate+"%. \<br> You will receive an amount of "+interest+", \<br>\ in the year "+year+". \<br>"
+
   
   
