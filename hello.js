@@ -1,10 +1,11 @@
 function compute() {
-  var principal = document.getElementById("principal").value;
-    If(parseInt(principal) < 1 ) {
-      alert("Please enter a positive value");
-      document.getElementById("principal").focus();
-      return;
-      }
+	var principal = document.getElementById("principal").value;
+	if(parseInt(principal) < 1) {
+		alert("Enter a positive number");
+		document.getElementById("principal").focus();
+		return;
+	}
+
 
   var rate = document.getElementById("rate").value;
   var years = document.getElementById("years").value;
