@@ -21,9 +21,9 @@ function compute() {
 	return false;
 }
 
-function UpdateRate() {
-    var rate = document.getElementById("rate").value;
-    document.getElementbyID("ratevalue").innerHTML = rate;
-  }
+function showRange() {
+	var rate = document.getElementById("rate").value;
+	document.getElementById("ratevalue").innerHTML = rate;
+}
 
 
