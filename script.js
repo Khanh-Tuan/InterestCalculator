@@ -2,9 +2,9 @@ function compute() {
   var amount = document.getElementById("amount").value {
     If(parseInt(amount) <1){
       alert("Please enter a positive value");
-      document.getElementById("amount").foucs()
+      document.getElementById("amount").focus();
       return;
-    };
+    }
   var rate = document.getElementById("rate").value;
   var years = document.getElementById("years").value;
   var interest = amount * rate * years /100;
@@ -14,7 +14,7 @@ function compute() {
   
   function UpdateRate() {
     var ratevalue = document.getElementById("rate").value;
-    document.getElementbyID("ratevalue").innerHTML = ratevalue;
+    document.getElementbyID("ratevalue").innerHTML=ratevalue;
   }
   
 
