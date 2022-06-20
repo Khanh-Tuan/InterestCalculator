@@ -11,11 +11,10 @@ function compute() {
   var years = document.getElementById("years").value;
   var interest = principal * rate * years / 100;
   var year = new Date().getFullYear()+parseInt(years);
-  var yearOfWithdrawal = parseInt(today.getFullYear())+parseInt(years);
   document.getElementById("depositmessage").innerHTML = ""+principal;
 	document.getElementById("interestmessage").innerHTML = ""+rate;
 	document.getElementById("amountmessage").innerHTML = ""+interest;
-	document.getElementById("yearmessage").innerHTML = ""+yearOfWithdrawal;
+	document.getElementById("yearmessage").innerHTML = ""+year;
 	showMessage();
 
 	return false;
