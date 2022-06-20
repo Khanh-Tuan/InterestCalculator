@@ -11,12 +11,18 @@ function compute() {
   var years = document.getElementById("years").value;
   var interest = principal * rate * years / 100;
   var year = new Date().getFullYear()+parseInt(years);
-  document.getElementbyID("result").innerText = "If you Deposit "+principal+", \<br>\ at an interest rate of "+rate+"%. \<br> You will receive an amount of "+interest+", \<br>\ in the year "+year+". \<br>"
-  }
-  
+  document.getElementById("depositmessage").innerHTML = ""+principal;
+	document.getElementById("interestmessage").innerHTML = ""+rate;
+	document.getElementById("amountmessage").innerHTML = ""+interest;
+	document.getElementById("yearmessage").innerHTML = ""+yearOfWithdrawal;
+	showMessage();
+
+	return false;
+}
+
 function UpdateRate() {
     var rate = document.getElementById("rate").value;
-    document.getElementbyID("ratevalue").innerText = rate;
+    document.getElementbyID("ratevalue").innerHTML = rate;
   }
 
 
